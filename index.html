@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Menu Styles</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <!-- Menu Style Selector -->
+      <select id="menu-selector">
+        <option value="dropdown">Dropdown</option>
+        <option value="modal">Modal Popup</option>
+        <option value="side">Side Menu</option>
+      </select>
+
+      <!-- Profile Button -->
+      <button id="profile-button">Profile</button>
+
+      <!-- Modal Popup Style -->
+      <div id="modal-menu" class="menu hidden">
+        <div class="modal-content">
+            <i id="close_menu" class="fas fa-window-close clsoe-icon-modal"></i>
+          <ul>
+            <li><i class="fas fa-user-circle"></i>&nbsp; Profile Settings</li>
+            <li><i class="fas fa-user-cog"></i>&nbsp; Account Settings</li>
+            <li><i class="fas fa-sign-out"></i>&nbsp; Logout</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Simple Dropdown Style -->
+      <div id="dropdown-menu" class="menu hidden">
+        <ul>
+          <li><i class="fas fa-user-circle"></i>&nbsp; Profile Settings</li>
+          <li><i class="fas fa-user-cog"></i>&nbsp; Account Settings</li>
+          <li><i class="fas fa-sign-out"></i>&nbsp; Logout</li>
+        </ul>
+      </div>
+
+      <!-- Side Menu Style -->
+      <div id="side-menu" class="menu hidden">
+      <i id="close_menu" class="fas fa-window-close clsoe-icon"></i>
+        <ul>
+          <li><i class="fas fa-user-circle"></i>&nbsp; Profile Settings</li>
+          <li><i class="fas fa-user-cog"></i>&nbsp; Account Settings</li>
+          <li><i class="fas fa-sign-out"></i>&nbsp; Logout</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
